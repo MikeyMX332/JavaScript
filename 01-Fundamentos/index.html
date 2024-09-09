@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundamentos de Programacion</title>
+  <!-- 
+  Segunda forma de escribir codigo de javascript
+  Dentro de la etiquetas <head></head> colocamos las etiquetas de <script>/script>
+  Esta forma tiene un inconveniente de que si el codigo interactura con algun elemento HTML, marcará error porque el dcocumeto aún no ha sido colocado.
+  Se utiliza el atributo "defer" en la etiqueta scrito, para que espere a cargar todo el HTMLl antes de ejecutar el código.  -->
+    <script defer>
+      console.log ("Este mensaje es desde el Head")
+    </script>
+<!-- 
+ Tercera forma de escribir código JavaScrit
+ DEntro de las etiquetS Head usamos las etiquetas <script></script> con el atributo src "source"
+ Esto quiere decir que podemos enlazar un archivo externo para ser leido en html
+ Esta es la forma más habitual de trabaar con JS
+  -->
+ <script defer src="./holamundo.js"></script>
 </head>
 <body>
   <h1>Fundamentos de Programacion</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti eum impedit officia eos debitis? Iusto voluptate alias deserunt ipsam earum expedita corrupti itaque voluptatum corporis magni praesentium, autem minus quaerat?</p>
+
+  <!-- 
+  Primera forma de escribir código de Javascript dentro de la etiqueta </script> Escribimos el codigo JS.
+  
+  Esta etiqueta es definida antes de la etiqueta de cierre del </body>
+  Esto es para cuando el código interactue con algun eleento del HTML, ESte ya este creadoantes de ejecutar las instrucciones.
+  -->
   <script>
-    console.log("Estoy aprendiendo a programar en Javascript")
-    console.log ("Si te metiste a leer mi mensaje me debes pagar 1000$ xD")
+    console.log ("Mensaje desde etiqueta script antes del ceirre del body")
   </script>
 </body>
 </html>
