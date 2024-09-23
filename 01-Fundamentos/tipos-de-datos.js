@@ -32,6 +32,14 @@ Es el valor que se le asigna a una variable que ha sido declarada pero no inicia
 
 Son un conjunto de datos que los almacena en una lista ordenada de elementos. Los datos dentro de los arregls se escriben entre corchetes  [ ] y separadps por comas ,
 
+* Objet
+
+Es un conjunto de multiples pares "clave"-"valor". Se escriben entre llaves {} y separados por comas ,
+
+* Functions o Funcioes
+
+Es un tipo de dato que puede ser "invocado". Se declaran con la palabra "function" y el código que ejecutan entre llaves {"codigo"}
+
 */ 
 
 // Number //
@@ -73,5 +81,34 @@ console.log (misFrutasFavoritas);
 console.log (miNumerosSuerte);
 console.log (otroArray);
 
+/* objeto */
 
+let persona = {
+  //clave: valor, 
+  nombre : "Miguel",
+  edad : 21,
+  colorCabello : "castaño" ,
+  altura : 1.82,
+  peso : undefined,
+  vivo : true,
+  novia : true,
+}
+
+console.log (persona);
+// Accedemos a los datos de una clave dentro de un objeto
+//Con la notacion de corchetes [].
+
+console.log(persona.nombre) ;
+console.log(persona.altura);
+console.log(persona.novia);
+
+/* Function */
+
+
+let mensajito = function () {
+  // Pasamos el código que ejecuta la función
+  console.log("Este es un mensaje lanzado por una funcion");
+}
+//invocamos la función
+mensajito ();
 
