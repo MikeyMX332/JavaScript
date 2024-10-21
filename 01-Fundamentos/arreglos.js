@@ -113,3 +113,97 @@ let numeroQuitado = numerosSuerte.pop()
 console.log (numerosSuerte)
 
 console.log (numeroQuitado)
+
+/* 
+
+Unshift()
+
+El metodo unshift lo que hace es que agrega un elemento al inicio del array.
+
+nombreArray.unshift (Elemento nuevo)
+
+*/
+
+console.log (frutasFavoritas);
+
+frutasFavoritas.unshift ("Coco")
+
+console.log (frutasFavoritas);
+
+/* 
+
+Shift ()- Elimina el primer elemento del array y lo devuelve.
+
+nombreArray.shift ()
+
+*/
+
+console.log (numerosSuerte);
+
+numerosSuerte.shift ();
+/* let quitarPrimero = numerosSuerte.shift */
+console.log (numerosSuerte)
+
+/* 
+indexOf(- Encuentra el indice de un elmento en el array
+
+nombreArray.indexOf (dato)
+
+*/
+
+let indice = frutasFavoritas.indexOf ("Pera")
+
+console.log(indice)
+
+/*
+
+splice()- Puede eliminar o agregar elementos al array desde una posicion especifica.
+
+eliminar
+
+nombreArray.splice (indiceInicio, IndiceFinal);
+
+agregar
+
+nombreArray.splice (indiceInicio, pasos, "valor1". "valor2")
+
+*/
+
+console.log (frutasFavoritas);
+
+frutasFavoritas.splice (1,2)
+
+console.log (frutasFavoritas)
+
+frutasFavoritas.splice(1,0, "fresa", "platano" )
+
+/* 
+
+slice()- Crear una copia de una porción del array. No modifica el original, se crea unnuevo array-
+
+nombrearray.slice (indiceInicio, IindiceFinal);
+
+*/
+
+let frutasCopia = frutasFavoritas.slice (3, 5)
+
+console.log(frutasCopia)
+
+/* 
+sort()- Ordena los elementos de un array de mayor a menor
+
+nombreArray.sort()- No pasamos dato entre parentesis.
+
+*/
+console.log (frutasFavoritas);
+
+frutasFavoritas.sort();
+
+console.log (frutasFavoritas);
+
+console.log (numerosSuerte)
+
+numerosSuerte.sort ();
+
+console.log (numerosSuerte)
+
